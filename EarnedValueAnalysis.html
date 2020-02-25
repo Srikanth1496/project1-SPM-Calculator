@@ -1,0 +1,203 @@
+<html>
+<head>
+    
+    <TITLE>
+	Earned VAlue Analysis
+	</TITLE>
+ <style>
+        table{
+            
+            background-color: burlywood;
+            font-family:serif;
+            fon
+             }
+        h1{
+            
+            color: brown;   
+         }
+          
+          body{
+              
+              background-color: cornsilk;
+          }
+        
+        
+    </style>
+</head>
+    
+<body>
+
+    <CENTER>
+	<H1>
+	 Earned VAlue Analysis Calculator!
+	</H1>
+	</CENTER>
+
+    
+    <div>
+        
+<BR>
+    <center>
+	<P NAME="instructions">
+		Enter the Details
+	</P><center>
+
+<center>
+    <form>
+<label>Enter the Estimated Budget</label>
+
+
+<input type="text" id="bac"></input>
+
+
+<label>Estimated Time Period</label>
+
+<input type="text" id="period"></input>
+
+
+<label>Enter the Actual Cost</label>
+
+<input type="text" id="ac"></input><br><br>
+
+
+&nbsp &nbsp<label>Time period spent<label>
+
+<input type="text" id="period1"></input>
+
+<label>Actual Work % Completed<label>
+
+
+<input type="text" id="awc"></input>
+    
+</form>
+</center>
+        
+<center>
+<br>
+<button onclick="Eva()">Perform Calculation</button>
+<br>
+<br>
+</center>
+ 
+ 
+    <center>
+<form>
+<label>Earned value</label>
+
+<input type="text" id="ev"></input><br><br>
+
+<label>Planned Value</label>
+
+<input type="text" id="pv"></input><br><br>
+
+<label>Cost Performance Index</label>
+
+<input type="text" id="cpi"></input><br><br>
+
+<label>Scheduled Performance Index</label>
+
+<input type="text" id="spi"></input><br><br>
+
+<label>Estimation At Completion</label>
+
+<input type="text" id="eac"></input><br><br>
+
+<label>Estimation To Completion</label>
+
+<input type="text" id="etc"></input><br><br>
+
+<label>Variance At Completion</label>
+
+<input type="text" id="vac"></input><br><br>
+
+<label>Cost Variance</label>
+
+<input type="text" id="cv"></input><br><br>
+
+<label>Scheduled Variance</label>
+
+<input type="text" id="sv"></input>
+
+</form>
+</center>
+
+
+</div>
+
+<script>
+function Eva()
+{
+  var bac=document.getElementById("bac").value;
+  var awc=document.getElementById("awc").value;
+  var ev=parseFloat(bac)*(parseFloat(awc))/100;
+  document.getElementById('ev').value = ev;
+
+  var bac=document.getElementById("bac").value;
+  var period=document.getElementById("period").value;
+  var period1=document.getElementById("period1").value;
+  var plv=(100*parseFloat(period1))/parseFloat(period);  
+  var pv=bac*(plv/100);
+  document.getElementById('pv').value = pv;
+  
+  var ev=document.getElementById("ev").value;
+  var ac=document.getElementById("ac").value;
+  var cpi=parseFloat(ev)/parseFloat(ac);
+  document.getElementById('cpi').value = cpi;
+
+  
+  var ev=document.getElementById("ev").value;
+  var pv=document.getElementById("pv").value;
+  var spi=parseFloat(ev)/parseFloat(pv);
+  document.getElementById('spi').value = spi;
+
+  var bac=document.getElementById("bac").value;
+  var cpi=document.getElementById("cpi").value;
+  var eac=parseFloat(bac)/parseFloat(cpi);
+  document.getElementById('eac').value = eac;
+
+  var eac=document.getElementById("eac").value;
+  var ac=document.getElementById("ac").value;
+  var etc=parseFloat(eac)-parseFloat(ac);
+  document.getElementById('etc').value = etc;
+  
+  var bac=document.getElementById("bac").value;
+  var eac=document.getElementById("eac").value;
+  var vac=parseFloat(bac)-parseFloat(eac);
+  document.getElementById('vac').value = vac;
+
+  var ev=document.getElementById("ev").value;
+  var ac=document.getElementById("ac").value;
+  var cv=parseFloat(ev)-parseFloat(ac);
+  document.getElementById('cv').value = cv;
+
+  var ev=document.getElementById("ev").value;
+  var pv=document.getElementById("pv").value;
+  var sv=parseFloat(ev)-parseFloat(pv);
+  document.getElementById('sv').value = sv;
+
+ 
+
+}
+</script>
+
+<table border="1" align="right">
+                <tr>
+                 <th>Name</th>
+                 <th>reg no.</th>
+               </tr>
+                <tr>
+                 <th>Srikanth</th>
+                 <th>17MIS1167</th>
+               </tr>
+               <tr>
+                 <th>Sai Rithick</th>
+                 <th>17MIS1159</th>  
+               </tr>
+               <tr>
+                 <th>Mohanan</th>
+                 <th>17MIS1008</th>   
+               </tr>
+                
+                </table>    
+</body>
+</html>

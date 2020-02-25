@@ -1,0 +1,405 @@
+<html>
+<head>
+    
+     <TITLE>
+	Function point Analysis
+	</TITLE>
+ <style>
+        table{
+            
+            background-color: burlywood;
+            font-family:serif;
+            fon
+             }
+        h1{
+            
+            color: brown;   
+         }
+          
+          body{
+              
+              background-color: cornsilk;
+          }
+        
+        
+</style>
+    
+    
+   <CENTER>
+	<H1>
+	 Function Point Analysis Calculator!
+	</H1>
+	</CENTER> 
+    
+  <script>
+    function calco()
+      {
+            var a= document.getElementById("u1").value;
+          var c,e,g;
+       
+              
+           if(document.getElementById("rs1").checked==true)                                                                                        
+              {
+                
+                  var b=document.getElementById("s1").value;
+                
+                  c=a*b;
+                   document.getElementById("d1").value=c;
+                 
+                  
+              }
+         
+        else if (document.getElementById("ra1").checked==true)
+              {
+                  
+                  var d=document.getElementById("a1").value;
+                
+                  e=a*d;
+                   document.getElementById("d1").value=e;
+              }
+           else if(document.getElementById("rc1").checked==true)
+              {
+                  var f=document.getElementById("c1").value;
+                  
+                  g=a*f;
+                   document.getElementById("d1").value=g;
+                  
+              }
+        
+          
+              
+      }
+    
+      function calct()
+      {
+          var e,g,c;
+          var a=document.getElementById('uo').value;
+               
+           if(document.getElementById("rs2").checked) 
+               
+              {
+                
+                  var b=document.getElementById("s2").value;
+                  
+                  c=a*b;
+                   document.getElementById("d2").value=c;
+                 
+                  
+              }
+            else if (document.getElementById("ra2").checked)
+              {
+                  
+                  var d=document.getElementById("a2").value;
+                
+                  e=a*d;
+                   document.getElementById("d2").value=e;
+              }
+            else if(document.getElementById("rc2").checked)
+              {
+                  var f=document.getElementById("c2").value;
+                  
+                  g=a*f;
+                   document.getElementById("d2").value=g;
+                  
+              }
+      }
+      
+      
+      function ccr()
+      {
+          
+           var e,g,c;
+          var a=document.getElementById('uq').value;
+               
+           if(document.getElementById("rs3").checked) 
+               
+              {
+                
+                  var b=document.getElementById("s3").value;
+                  
+                  c=a*b;
+                   document.getElementById("d3").value=c;
+                 
+                  
+              }
+            else if (document.getElementById("ra3").checked)
+              {
+                  
+                  var d=document.getElementById("a3").value;
+                
+                  e=a*d;
+                   document.getElementById("d3").value=e;
+              }
+            else if(document.getElementById("rc3").checked)
+              {
+                  var f=document.getElementById("c3").value;
+                  
+                  g=a*f;
+                   document.getElementById("d3").value=g;
+                  
+              }
+      }
+    
+      function calcf()
+      {
+           var e,g,c;
+          var a=document.getElementById('if').value;
+               
+           if(document.getElementById("rs4").checked) 
+               
+              {
+                
+                  var b=document.getElementById("s4").value;
+                  
+                  c=a*b;
+                   document.getElementById("d4").value=c;
+                 
+                  
+              }
+            else if (document.getElementById("ra4").checked)
+              {
+                  
+                  var d=document.getElementById("a4").value;
+                
+                  e=a*d;
+                   document.getElementById("d4").value=e;
+              }
+            else if(document.getElementById("rc4").checked)
+              {
+                  var f=document.getElementById("c4").value;
+                  
+                  g=a*f;
+                   document.getElementById("d4").value=g;
+              }
+      }
+      
+      function calz()
+      {
+            var e,g,c;
+          var a=document.getElementById('ef').value;
+               
+           if(document.getElementById("rs5").checked) 
+               
+              {
+                
+                  var b=document.getElementById("s5").value;
+                  
+                  c=a*b;
+                   document.getElementById("d5").value=c;
+                 
+                  
+              }
+            else if (document.getElementById("ra5").checked)
+              {
+                  
+                  var d=document.getElementById("a5").value;
+                
+                  e=a*d;
+                   document.getElementById("d5").value=e;
+              }
+            else if(document.getElementById("rc5").checked)
+              {
+                  var f=document.getElementById("c5").value;
+                  
+                  g=a*f;
+                   document.getElementById("d5").value=g;
+              }
+      
+      }
+     var f;
+      function uf()
+      {
+          var a,b,c,d,e;
+           a=document.getElementById('d1').value;
+           b=document.getElementById('d2').value;
+           c=document.getElementById('d3').value;
+           d=document.getElementById('d4').value;
+           e=document.getElementById('d5').value;
+           f=parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e);
+          document.getElementById('uf1').value=f;
+      }
+      
+      var h;
+      function vdf()
+      {
+          var a=document.getElementById('v1').value;
+          var b=parseInt(a);
+          
+        h=0.65+(b/100);
+          document.getElementById('v2').value=h;
+      }
+      var k;
+      function aff()
+      {
+          
+          k=h*f;
+          document.getElementById('afq').value=k;
+      }
+      var n;
+      function tot()
+      {
+          var a,b;
+          a=document.getElementById('tt').value;
+           b=parseInt(a);
+          
+         
+          n=b*k;
+          document.getElementById('tt1').value=n;
+          
+      }
+      
+      function toteff()
+      {
+          var a=document.getElementById('eff1').value;
+          var b=parseInt(a);
+          
+          var e;
+          e=n/b;
+          document.getElementById('eff2').value=e;
+          
+      }
+    </script>  
+    
+
+    </head>
+    
+    
+    
+    <body id="b1">
+    <form name="f1">
+    <table border="0" >
+        
+    <tr>
+    <th> number of user input<input type="number" id="u1"></th>
+        <th> simple<input type="number" id="s1"></th>
+         <th> average <input type="number" id="a1"></th>
+         <th> complex <input type="number" id="c1"></th>
+        <th>  simple <input type="radio" id="rs1" name="select1"></th>
+        <th>  average <input type="radio" id="ra1" name="select1"></th>
+        <th> complex <input type="radio" id="rc1" name="select1"></th>
+        <th> total <input type="button" value="total" id="t1" onclick="calco()"></th>
+        <th>  <input type="number" id="d1"></th>
+        
+        </tr>    
+        <tr>
+        
+        <th> number of user output<input type="number" id="uo"></th>
+            <th> simple <input type="number" id="s2"></th>
+            <th> average <input type="number" id="a2"></th>
+            <th> complex <input type="number" id="c2"></th>
+            <th> simple <input type="radio" id="rs2" name="select2"></th>
+            <th> average <input type="radio" id="ra2" name="select2"></th>
+            <th> complex <input type="radio" id="rc2" name="select2"></th>
+            <th> total <input type="button" value="total" id="t2" onclick="calct()"></th>
+            <th> <input type="number" id="d2"></th>
+        
+        
+        </tr>
+        
+        <tr>
+        
+        <th> number of external inqueries <input type="number" id="uq"></th>
+            <th> simple <input type="number" id="s3"></th>
+            <th> average <input type="number" id="a3"></th>
+            <th> complex<input type="number" id="c3"></th>
+            <th> simple <input type="radio" id="rs3" name="select3"></th>
+            <th> average <input type="radio" id="ra3" name="select3"></th>
+            <th> complex <input type="radio" id="rc3" name="select3"></th>
+            <th> total <input type="button" value="total" id="t3" onclick="ccr()"></th>
+            <th> <input type="number" id="d3"></th>
+        
+     </tr>
+        
+     <tr>
+          <th> number of internal logical files <input type="number" id="if"></th>
+            <th> simple <input type="number" id="s4"></th>
+            <th> average <input type="number" id="a4"></th>
+            <th> complex<input type="number" id="c4"></th>
+            <th> simple <input type="radio" id="rs4" name="select4"></th>
+            <th> average <input type="radio" id="ra4" name="select4"></th>
+            <th> complex <input type="radio" id="rc4" name="select4"></th>
+            <th> total <input type="button" value="total" id="t4" onclick="calcf()"></th>
+            <th> <input type="number" id="d4"></th>
+        
+        
+        </tr>    
+        
+        <tr>
+        <th>number of external interface files<input type="number" id="ef"></th>
+            <th> simple <input type="number" id="s5"></th>
+            <th> average <input type="number" id="a5"></th>
+            <th> complex<input type="number" id="c5"></th>
+            <th> simple <input type="radio" id="rs5" name="select5"></th>
+            <th> average <input type="radio" id="ra5" name="select5"></th>
+            <th> complex <input type="radio" id="rc5" name="select5"></th>
+            <th> total <input type="button" value="total" id="t5" onclick="calz()"></th>
+            <th> <input type="number" id="d5"></th>
+        
+        </tr>
+        
+        <tr>
+        
+            <th> UNADJUSTED FUNCTION POINT TOTAL (UAF) </th>
+            <th><input type="button" id="u" value="UAF" onclick="uf()"></th>
+        <th>  <input type="number" id="uf1"></th>
+        </tr>
+        
+        <tr>   
+        
+        <th> VALUE ADJUSTMENT  FACTOR  </th>
+            <th> <input type="button" value="VDF" id="vd" onclick="vdf()"></th>
+            <th> <input type="number" id="v1"  ></th>
+            <th > <input type="number" id="v2"></th>
+        
+        
+        </tr>
+        
+        <tr>
+        
+        <th> ADJUSTED FUNCTION POINT</th>
+        <th> <input type="button" value="ADF" id="af" onclick="aff()"></th>
+        <th> <input type="number" id="afq"></th>
+        </tr>
+            
+        
+        <tr>
+        
+            
+        <th> Enter cost of one fp <input type="number" id="tt"></th>
+            <th> <input type="button" value="total cost" onclick="tot()"></th>
+            <th> <input type="number" id="tt1"></th>
+        
+        
+        </tr>
+        <tr>
+        <th> Enter the cost for employees<input type="number" id="eff1"></th>
+        <th> <input type="button"id="efg" value="total effort" onclick="toteff()"></th>
+        <th> <input type="number" id="eff2"></th>
+        
+        
+        </tr>
+        </table>
+        
+        </form>
+    <table border="1" align="right">
+                <tr>
+                 <th>Name</th>
+                 <th>reg no.</th>
+               </tr>
+                <tr>
+                 <th>Srikanth</th>
+                 <th>17MIS1167</th>
+               </tr>
+               <tr>
+                 <th>Sai hrithik</th>
+                 <th>17MIS1159</th>  
+               </tr>
+               <tr>
+                 <th>Mohanan</th>
+                 <th>17MIS1008</th>   
+               </tr>
+                
+                </table>  
+    
+    
+    </body>
